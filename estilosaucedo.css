@@ -100,13 +100,14 @@ table {
 }
 
 td {
-    width: 300px;
+    width:auto;
     height: 300px;
 }
 
 .categorias {
     justify-content: center;
     align-items: center;
+    display:inline-block;
     height: 100%;
     padding: 20px;
 }
@@ -141,6 +142,10 @@ td {
         flex-direction: row; /* Mantiene la fila en computadoras */
     }
 }
+
+/* Opcional: Para mejorar el espaciado en dispositivos más grandes */
+@media all and (min-width: 1024px) {
+    .pantalla > div { /* Asegúrate de que los hijos de .pantalla tenga
 
 /* Opcional: Para mejorar el espaciado en dispositivos más grandes */
 @media all and (min-width: 1024px) {
